@@ -35,16 +35,16 @@ body {
 	background-size: 60px 60px;
 	cursor: pointer;
 	border-radius: 0 0 20px 0;
-	/*box-shadow: 0 0 30px rgba(0,0,0,0.5) inset;*/
+	box-shadow: 0 0 30px rgba(0,0,0,0.5) inset;
 }
 
-.search {
+/*.search {
 	margin: 13px 0 0 20px;
 	float: left;
 	height: 20px;
 	width: 150px;
 	background-color: #bbb;
-}
+}*/
 
 .title-string {
 	text-transform: uppercase;
