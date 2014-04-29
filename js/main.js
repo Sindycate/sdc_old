@@ -1,4 +1,4 @@
-/*;
+;
 function inArray(value, array)
 {
 	for(var i = 0; i < array.length; i++)
@@ -43,7 +43,7 @@ for (var i = 0; i < expandArray.length; i++)
 			readFull[0].classList.add("hidden");
 		}
 	};
-
+}
 
 // ******************************* Создаём конструктор класса
 
@@ -55,9 +55,9 @@ var Post = function(titleName, date, category, preview, article)
 	this.preview = preview;
 	this.article = article;
 }
-*/
+
 var request = new XMLHttpRequest();
 request.open("GET", "data/0.json", false);
 request.send(null);
 var post = JSON.parse(request.responseText);
-console.log(post.result[0]);
+console.log(post);
