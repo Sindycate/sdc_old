@@ -1,2 +1,2 @@
-SDC
+SDC: Personal Page
 ===

@@ -9,7 +9,7 @@
 }
 
 body {
-	background-image: url(../img/bg5.png);
+	background-image: url(../img/fon4.png);
 	font-family: 'PT Sans', sans-serif, Arial;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
@@ -31,27 +31,30 @@ body {
 .header {
 	width: 900px;
 	height: 60px;
-	background: url(../img/icon.png) 30px 0px no-repeat, #888;
+	background: url(../img/icon.png) 30px 0px no-repeat;
 	background-size: 60px 60px;
-	cursor: pointer;
-	border-radius: 0 0 20px 0;
-	box-shadow: 0 0 30px rgba(0,0,0,0.5) inset;
 }
 
-/*.search {
-	margin: 13px 0 0 20px;
-	float: left;
-	height: 20px;
-	width: 150px;
-	background-color: #bbb;
-}*/
+.search {
+	margin: 20px 50px 0 0;
+	float: right;
+	height: 27px;
+	width: 180px;
+	padding-left: 10px;
+	opacity: .9;
+	background-color: white;
+	line-height: 1.5em;
+	color: #111;
+	opacity: .8;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
 
 .title-string {
 	text-transform: uppercase;
 	display: inline-block;
 	text-align: center;
 	font-weight: bold;
-	color: white;
+	color: #fff;
 	margin: 30px 0 0 85px;
 	text-shadow: 1px 1px 2px black ;
 	cursor: pointer;
@@ -61,10 +64,12 @@ body {
  * Sidebar
  ***************************************/
 .left-sidebar {
+	margin: 50px 0 0 0;
 	display: inline-block;
-	width: 200px;
-/*??	height: 400px;*/
 	background-color: #333;
+	width: 200px;
+	opacity: .9;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .section {
@@ -108,8 +113,6 @@ body {
 	vertical-align: top;
 	margin: 0 0 0 -4px;
 	width: 700px;
-	/*height: 800px;*/
-	/*background-color: #999;*/
 }
 
 .post {
@@ -117,8 +120,6 @@ body {
 	margin: 50px auto;
 	width: 600px;
 	height: 300px;
-	/*border-radius: 3px;*/
-	/*height: 300px;*/
 	background-color: #fff;
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 	overflow: hidden;
@@ -141,15 +142,23 @@ body {
 	color: orange;
 }
 
-.title-line::after {
-	content: "26.10.14 | books";
-	font-size: .7em;
-	line-height: 2em;
-	display: block;
-	margin: 15px auto;
+.information {
+	display: inline-block;
 	width: 600px;
 	height: 30px;
-	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: #e8ebff;
+	line-height: 2em;
+	border-top: 1px solid #444;
+	background-color: #555;
+}
+
+.date {
+	display: inline-block;
+}
+
+.category {
+	display: inline-block;
 }
 
 .read-full {
