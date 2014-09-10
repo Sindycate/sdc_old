@@ -15,7 +15,11 @@ for (var i = 0; i < expandArray.length; i++)
 {
 	expandArray[i].onclick = function()
 	{
+<<<<<<< HEAD
 		var post = this.previousElementSibling;
+=======
+		var post = this.parentNode;
+>>>>>>> 5d1fd9d9bf1203cfaf572881aee7185571d8fb5a
 		var activePostsArray = document.getElementsByClassName(activePost);
 		for (var j = 0; j < activePostsArray.length; j++)
 		{
