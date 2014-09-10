@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Personal-Page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<div class="wrapper command-module">
+		<header class="header">
+			<div class="title-string">indycate</div>
+		</header>
+		<div class="main-colum-left">
+			<a href = "index.php"><input class="addArticle" type="submit" value="Вернуться назад"></a>
+		</div>
+		<div class="news-block">
+			<div class="post">
+				<form action="save_user.php" method="post">
+					<h1 class="title-line expand">Регистрация</h1>
+					<hr>
+					<ul class="table_registration">
+						<li>
+							<label>Ваш логин:</label>
+						</li>
+						<input name="new_login" type="text" size="30" maxlength="30">
+						<li>
+							<label>Ваш пароль:</label>
+						</li>
+						<input name="new_password" type="password" size="30" maxlength="30">
+					</ul>
+					<input id="button_reg" type="submit" name="submit" value="Зарегистрироваться">
+				</form>
+			</div>
+		</div>
+		<!-- <div class="footer">Подвал сайта</div> -->
+	</div>
+	<script src="./js/main.js"></script>
+</body>
+</html>

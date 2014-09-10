@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Personal-Page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<div class="wrapper command-module">
+		<header class="header">
+			<!-- <div class="search">Поиск по сайту...</div> -->
+			<div class="title-string">indycate</div>
+		</header>
+		<div class="main-colum-left">
+			<div class="left-sidebar">
+				<ul class="section">
+					<li><a href="#">Новое</a></li>
+					<li><a href="#">Всё</a></li>
+					<li><a href="#">По категориям</a>
+						<ul>
+							<li><a href="#">Заметки</a></li>
+							<li><a href="#">Научное</a></li>
+							<li><a href="#">Путешествия</a></li>
+							<li><a href="#">Другое</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Дополнительно</a></li>
+				</ul>
+			</div>
+			<a href = "index.php"><input class="publish" type="submit" value="Вернуться назад"></a>
+		</div>
+		<div class="news-block">
+			<div class="new_post">
+				<h1 class="title-line expand">
+					Редактор новостей
+				</h1>
+				<form action="save_new_article.php" method="post">
+					<div class="new_title_line">
+						<textarea rows="1" cols="53" name="newArticle_title" placeholder="Заголовок статьи"></textarea>
+					</div>
+					<div class="new_information">
+						<div class="date">
+							<textarea rows="1" cols="15" name="newArticle_date" placeholder="Дата"></textarea>
+						</div>
+						<div class="category">
+							<textarea rows="1" cols="15" name="newArticle_category" placeholder="Категория"></textarea>
+						</div>
+					</div>
+					<p class="content">
+						<textarea rows="7" cols="61" name="newArticle_text" placeholder="Текс статьи"></textarea>
+					</p>
+					<input class="saveArticle" type="submit" name="submit" value="Сохранить">
+				</form>
+			</div>
+		</div>
+		<!-- <div class="footer">Подвал сайта</div> -->
+	</div>
+	<!-- <script src="./js/main.js"></script> -->
+</body>
+</html>
